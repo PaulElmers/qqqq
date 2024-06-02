@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вибір плану передплати</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        td:first-child, th:first-child {
+            font-weight: bold;
+        }
+        td:last-child, th:last-child {
+            font-style: italic;
+        }
+        td:nth-child(2), th:nth-child(2) {
+            color: green;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            color: white;
+            background-color: #4CAF50;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Виберіть свій план передплати</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>План</th>
+                <th>Ціна</th>
+                <th>Термін</th>
+                <th>Особливості</th>
+                <th>Вибір</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Базовий</td>
+                <td>100 грн</td>
+                <td>1 місяць</td>
+                <td>Обмежений доступ до контенту</td>
+                <td><button class="btn">Вибрати</button></td>
+            </tr>
+            <tr>
+                <td>Стандартний</td>
+                <td>250 грн</td>
+                <td>3 місяці</td>
+                <td>Повний доступ до контенту</td>
+                <td><button class="btn">Вибрати</button></td>
+            </tr>
+            <tr>
+                <td>Преміум</td>
+                <td>400 грн</td>
+                <td>6 місяців</td>
+                <td>Повний доступ + ексклюзивний контент</td>
+                <td><button class="btn">Вибрати</button></td>
+            </tr>
+            <tr>
+                <td>VIP</td>
+                <td>700 грн</td>
+                <td>12 місяців</td>
+                <td>Повний доступ + ексклюзивний контент + підтримка</td>
+                <td><button class="btn">Вибрати</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

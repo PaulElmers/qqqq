@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Example</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        background-color: #333;
+        color: #fff;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    nav ul li {
+        padding: 15px;
+        cursor: pointer;
+        position: relative;
+    }
+    nav ul li:hover {
+        background-color: #555;
+    }
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+    .submenu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .submenu ul li {
+        padding: 10px;
+        cursor: pointer;
+    }
+    .submenu ul li:hover {
+        background-color: #555;
+    }
+    nav ul li:hover .submenu {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li>Home</li>
+        <li>Products
+            <div class="submenu">
+                <ul>
+                    <li>Laptops
+                        <div class="submenu">
+                            <ul>
+                                <li>Gaming Laptops</li>
+                                <li>Business Laptops</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>Smartphones
+                        <div class="submenu">
+                            <ul>
+                                <li>Android Phones</li>
+                                <li>iPhones</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>Tablets
+                        <div class="submenu">
+                            <ul>
+                                <li>iPads</li>
+                                <li>Android Tablets</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<div style="padding: 20px;">
+    <h2>Welcome to our website!</h2>
+    <p>This is the content area.</p>
+</div>
+
+</body>
+</html>
